@@ -518,16 +518,27 @@
   // console.log(cervezaCero);
   // cervezaCero.caracteristicas()
 
-(function () {
-console.log("Mi primer función anónima autoejecutable");
-})();
+// (function () {
+// console.log("Mi primer función anónima autoejecutable");
+// })();
 
-(function (d,w,c) {
-console.log(w);
-console.log(c);
-console.log(d);
-c.log("Hola puta");
-})(document, window, console);
+// (function (d,w,c) {
+// console.log(w);
+// console.log(c);
+// console.log(d);
+// c.log("Hola puta");
+// })(document, window, console);
+// 1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.
+function contador (texto) {
+  return texto.length 
+}
+console.log(contador("hola mundo"));
+
+//2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
+function recortar (letras) {
+  return letras.slice(0,4)
+}
+console.log(recortar("Hola Mundo"));
 </script>
 
 </html>
