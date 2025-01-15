@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Nuevos tipos de datos</title>
+</head>
+<body>
+    <h1 style="color: blueviolet;">Nuevos tipos de datos</h1>
+    <script>
+        //symbol
+        // const NOMBRE = Symbol("NOMBRE");
+        // const SALUDAR = Symbol("SALUDAR");
+
+        // const persona = {
+        //     [NOMBRE]: "Jose"
+        // }
+        // console.log(persona);
+        
+        // persona.NOMBRE = "Jose Luis Navarta";
+        // console.log(persona.NOMBRE);
+        // console.log(persona[NOMBRE]);
+
+        // persona[SALUDAR] = function () {
+        //     console.log("Hola");
+        // }
+        // console.log();
+        // persona[SALUDAR]();
+    
+        // console.log(Object.getOwnPropertySymbols(persona))
+
+        //map
+        // let mapa = new Map();
+        // mapa.set("nombre", "José Luis");
+        // mapa.set("apellido", "Navarta");
+        // mapa.set("edad", 45)
+
+        // console.log(mapa);
+        // console.log(mapa.size);
+        // console.log(mapa.has("correo"));
+        // console.log(mapa.has("nombre"));
+        // console.log(mapa.get("apellido"))
+        // console.log(mapa.has("Nombre"));
+        // console.log(mapa.get("nombre"));
+        // mapa.set("nombre", "exa")
+        // console.log(mapa.get("nombre"))
+        // // mapa.delete("apellido")
+        // // console.log(mapa.get("apellido"))
+        
+        // for (let [key, value] of mapa) {
+        //       console.log(`LLave: ${key}, Valor: ${value}`);
+                
+        // }
+
+        // const mapa2 = new Map([
+        //     ["nombre", "gaby"],
+        //     ["edad", 12],
+        //     ["direccion", "Pasaje Senador Molina"],
+        //     ["numero", 635]]
+        // )
+        // console.log(mapa2);
+        // for (const [key, value] of mapa2) {
+        //     console.log(`LLave: ${key}, Valor: ${value}`);
+            
+        // }
+        // const llavesMapa2 = [...mapa2.keys()];
+        // const valoresMapa2 = [...mapa2.values()];
+        // console.log(llavesMapa2);
+        // console.log(valoresMapa2);
+        
+        // const ws = new WeakSet ([1,2,3,3,4,5,true, "false", true, {}, {}, "Hola", "hola"]);
+        // console.log(ws);
+        
+        // const ws = new WeakSet();
+
+        // let valor1 = {"valor 1": 1};
+        // let valor2 = {"valor 2": 2};
+        // let valor3 = {"valor 3": 3};
+
+        // ws.add(valor1);
+        // ws.add(valor2);
+        // ws.add(valor3);
+        // console.log(ws);    
+        // console.log(ws.has(valor3));
+        // ws.delete(valor2);
+        // ws.add(valor2);
+        // console.log(ws);
+
+        // setInterval(() => console.log(ws), 1000);
+        
+        // setTimeout(()=>{
+        //     valor1 = null;
+        //     valor2 = null;
+        //     valor3 = null;
+        // },5000);
+
+        // const wm = new WeakMap([
+        //     ["nombre", "gaby"],
+        //     ["edad", 12],
+        //     ["direccion", "Pasaje Senador Molina"],
+        //     ["numero", 635]
+        // ])
+
+        const wm = new WeakMap();
+        let llave1 = {};
+        let llave2 = {};
+        let llave3 = {};
+
+        wm.set(llave1, 1);
+        wm.set(llave2, 2);
+        console.log(wm);
+        
+    </script>
+</body>
+</html>
