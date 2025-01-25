@@ -1,0 +1,16 @@
+{
+    "cadena": "Jose",
+    "numero": "35",
+    "booleano": "true",
+    "arreglo": [
+        "correr",
+        "programar",
+        "trabajar"
+    ],
+    "objeto": {
+        "email": "joseluisnavarta@hotmail.com.ar",
+        "facebook": "facebo"
+    },
+    "nulo": null
+}
+

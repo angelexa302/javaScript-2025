@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=S, initial-scale=1.0">
     <title>Nuevos tipos de datos</title>
 </head>
+
 <body>
     <h1 style="color: blueviolet;">Nuevos tipos de datos</h1>
     <script>
@@ -16,7 +18,7 @@
         //     [NOMBRE]: "Jose"
         // }
         // console.log(persona);
-        
+
         // persona.NOMBRE = "Jose Luis Navarta";
         // console.log(persona.NOMBRE);
         // console.log(persona[NOMBRE]);
@@ -26,7 +28,7 @@
         // }
         // console.log();
         // persona[SALUDAR]();
-    
+
         // console.log(Object.getOwnPropertySymbols(persona))
 
         //map
@@ -46,10 +48,10 @@
         // console.log(mapa.get("nombre"))
         // // mapa.delete("apellido")
         // // console.log(mapa.get("apellido"))
-        
+
         // for (let [key, value] of mapa) {
         //       console.log(`LLave: ${key}, Valor: ${value}`);
-                
+
         // }
 
         // const mapa2 = new Map([
@@ -61,16 +63,16 @@
         // console.log(mapa2);
         // for (const [key, value] of mapa2) {
         //     console.log(`LLave: ${key}, Valor: ${value}`);
-            
+
         // }
         // const llavesMapa2 = [...mapa2.keys()];
         // const valoresMapa2 = [...mapa2.values()];
         // console.log(llavesMapa2);
         // console.log(valoresMapa2);
-        
+
         // const ws = new WeakSet ([1,2,3,3,4,5,true, "false", true, {}, {}, "Hola", "hola"]);
         // console.log(ws);
-        
+
         // const ws = new WeakSet();
 
         // let valor1 = {"valor 1": 1};
@@ -87,7 +89,7 @@
         // console.log(ws);
 
         // setInterval(() => console.log(ws), 1000);
-        
+
         // setTimeout(()=>{
         //     valor1 = null;
         //     valor2 = null;
@@ -101,15 +103,146 @@
         //     ["numero", 635]
         // ])
 
-        const wm = new WeakMap();
-        let llave1 = {};
-        let llave2 = {};
-        let llave3 = {};
+        // const wm = new WeakMap();
+        // let llave1 = {};
+        // let llave2 = {};
+        // let llave3 = {};
 
-        wm.set(llave1, 1);
-        wm.set(llave2, 2);
-        console.log(wm);
+        // wm.set(llave1, 1);
+        // wm.set(llave2, 2);
+        // console.log(wm);
+
+        //iterator
+
+        // const iterable = new Map([
+        //     ["nombre", "José Luis"],
+        //     ["apellido", "Navarta"],
+        //     ["edad", 45],
+        // ]);
+        // const iterador = iterable[Symbol.iterator]();
+        // console.log(iterador);
+
+        // let next = iterador.next();
+
+        // while (!next.done) {
+        // console.log(next.value);
+        //     next = iterador.next()
+        // }
+
+        // const iterable =[1,2,3,4,5,6,7]
+        // const iterable1 =["Hola Mundo"]
+        // const iterador =iterable[Symbol.iterator]()
+        // const iterador1 =iterable1[Symbol.iterator]()
+        // console.log(iterable);
+        // console.log(iterable);
+        // console.log(iterable1);
+        // console.log(iterador.next());
+        // console.log(iterador.next());
+        // console.log(iterador.next());
+        // console.log(iterador.next());
+        // console.log(iterador.next());
+        // console.log(iterador.next());
+        // console.log(iterador.next());
+        // console.log(iterador.next());
+        // let next = iterador.next();
+        // while (!next.done) {
+        //    console.log(next.value);
+        //     next= iterador.next();
+        // }
+
+        // function* iterable (){
+
+            
+            
+        //     yield "Hola";
+        //     console.log("Hola consola");
+        //     yield "Hola2";
+        //     console.log("Seguimos con mas instrucciones de nuestro codigo");
+        //     yield "Hola3";
+        //     yield "Hola4";
+        // }
+        // let iterador =iterable();
+        // // setInterval(() => console.log(iterador.next()), 5000);
+        // // console.log(iterador.next());
+        // // console.log(iterador.next());
+        // // console.log(iterador.next());
+        // // console.log(iterador.next());
+        // // console.log(iterador.next());
+        // for (let y of iterador) {
+        //     console.log(y);
+        // }
+        // const arr = [...iterable()];
+        // console.log(arr);
         
-    </script>
+        // function cuadrado (valor){
+        //     setTimeout(() => {
+        //       return console.log({valor, resultado:valor*valor});
+        //     },Math.random() *1000);
+
+        // }
+        // function* generador(){
+        //     console.log("Inicio");
+        //     yield cuadrado(0)
+        //     yield cuadrado(1)
+        //     yield cuadrado(2)
+        //     yield cuadrado(3)
+        //     yield cuadrado(4)
+        //     yield cuadrado(5)
+        //     yield cuadrado(6)
+        // }
+        // let gen = generador();
+        // for (let y of gen) {
+        //     console.log(y);
+            
+        // }
+
+        // const persona =()=> ({
+        //     apellido: "",
+        //     nombre: "",
+        //     edad: "",
+        // })
+
+        // const manejador = {
+        //     set(obj, prop, valor){
+        //     obj[prop]=valor;    
+        //     }
+        // }
+
+
+        // const jon = new Proxy(persona(), manejador);
+        // jon.nombre = "Jose Luis";
+        // jon.apellido = "Navarta";
+        // jon.edad = 45; 
+        // console.log(jon);
+
+        // const gaby = new Proxy(persona(), manejador);
+        // gaby.nombre = "Gabriel";
+        // gaby.apellido = "Navarta";
+        // gaby.edad = 12; 
+        // console.log(gaby);
+        
+        // const json = {
+        //     cadena: "José Luis",
+        //     numero: 45,
+        //     booleano: false,
+        //     arreglo: ["Voley", "Js", "escuela"],
+        //     objeto: {
+        //         email: "joseluisnavarta@hotmail.com.ar",
+        //         cel: "2975019720"
+        //     },
+        //     nulo: null,
+        // }
+
+
+        // // console.log(json);
+        // // console.log("{}");
+        // // console.log(JSON)
+        // console.log(JSON.parse("{}"));
+        // console.log(JSON.parse("[1,2,3,4,5]"));
+        
+        
+        
+        </script>
 </body>
+
 </html>
